@@ -58,7 +58,6 @@ def post_detail(request, id):
         if post['id'] == id:
             context = {'post': post}
             return render(request, template, context)
-
     else:
         raise Http404('Post not found')
 
